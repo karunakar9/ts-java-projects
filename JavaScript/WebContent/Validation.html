@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validate(){
+	checkMovieName()
+}
+function checkMovieName(){
+	var a=document.getElementById("i1").value
+	if(a==""){
+		alert("Input is empty! enter movie name")
+	}else if(!(a=="Titanic" || a=="Godzilla")){
+		alert("Enter Titanic or Godzilla ")
+	}else{
+		checkAge()
+	}
+}
+function checkAge(){
+	var a=document.getElementById("i2").value;
+	var age=parseInt(a)
+	if (a==""){
+		alert("input is empty! enter age")
+	}else if(age<=18 ||age>=80){
+		alert("enter age between 18 and 80")
+	}else{
+		checkMail()
+	}
+}
+function checkMail(){
+	var a=document.getElementById("i3").value;
+	var p=/^[a-zA-Z0-9.-_]+\@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,4}$/
+    if(a==""){
+    	alert("email is empty! enter email")
+    }else if(!(p.test(a))){
+    	alert("invalid email")
+    }else {
+    	checkPassword()
+    }
+}
+function checkPassword(){
+	var a=document.getElementById("i4").value;
+	var p=/^((?=.*[0-9])+(?=.*[a-z])+(?=.*[A-Z])+(?=.*[@.#%_])).{8}$/
+	if(!(p.test(a))){
+		alert("invalid password")
+	}
+}
+</script>
+</head>
+<body>
+	<form>
+		<center>
+			<table>
+				<tr>
+					<td>Enter Movie Name(Titanic or Godzilla)</td>
+					<td><input type="text" id="i1"></td>
+				</tr>
+				<tr>
+					<td>enter Age</td>
+					<td><input type="text" id="i2"></td>
+				</tr>
+				<tr>
+					<td>enter email:</td>
+					<td><input type="text" id="i3"></td>
+				</tr>
+				<tr>
+					<td>enter password:</td>
+					<td><input type="text" id="i4"></td>
+				</tr>
+				<tr>
+					<td>enter feedback:</td>
+					<td><textarea rows = "10" cols = "15"></textarea></td>
+				</tr>
+
+			</table>
+			<input type="button" id="i6" value="submit feedback"
+				onclick=validate()>
+		</center>
+	</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>perfectNUmcheck</title>
+<script type="text/javascript">
+function perfectNumber(num){
+	var sum=0;
+
+	for(var i=1;i<=num/2;i++){
+		if(num%i==0){
+			sum=sum+i;
+		}
+	}
+	return (sum==num);
+}
+document.write(perfectNumber(6));
+</script>
+</head>
+<body>
+	<h1>perfect number</h1>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ServletCofigContentDemo</display-name>
+	<servlet>
+		<servlet-name>A</servlet-name>
+		<servlet-class>com.ex.Servlet1</servlet-class>
+		<init-param>
+			<param-name>TraineeId</param-name>
+			<param-value>1001</param-value>
+		</init-param>
+		<init-param>
+			<param-name>TraineeName</param-name>
+			<param-value>mothilal</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>A</servlet-name>
+		<url-pattern>/S1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>B</servlet-name>
+		<servlet-class>com.ex.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>B</servlet-name>
+		<url-pattern>/S2</url-pattern>
+	</servlet-mapping>
+	<context-param>
+	<param-name>TraineeName</param-name>
+	<param-value>Rajani</param-value>
+	</context-param>
+	<context-param>
+	<param-name>Org</param-name>
+	<param-value>TalentSprint</param-value>
+	</context-param>
+	
+
+</web-app>

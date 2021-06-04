@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getbyName</title>
+<script type="text/javascript">
+function getResult(){
+	var a=parseInt(document.getElementsByName("n1")[0].value);
+	var b=parseInt(document.getElementsByName("n1")[1].value);
+	document.write(a+b)
+}
+</script>
+</head>
+<body>
+	<center>
+		<form>
+			Enter Num1:<input type="number" name="n1" id="i1"/><br>
+			Enter Num2:<input type="number" name="n1" id="i2"/><br>
+			<input type="submit" name="n3" value="ADD" onclick="getResult()">
+		</form>
+	</center>
+
+</body>
+</html>

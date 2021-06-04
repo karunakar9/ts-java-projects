@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1440355487.index
+\JstleExample\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2189886065.index
+\FirstCryProject\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\803117699.index
+\ImplicitObjectDemo\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3533275490.index
+\JstleExample\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\86778755.index
+\MVC\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1959735669.index
+\conflictImplicitObjectDemo\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1971777508.index
+\JSPExcercses\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2166364186.index
+\CustomerProjectLoginOut\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3735899625.index
+\UserBeanExample\src
+C:\practice_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1196359176.index
+\StudentProject\src

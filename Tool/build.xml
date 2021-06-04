@@ -1,0 +1,35 @@
+<project name="App_Prod_Encrypt" basedir="." default="jar">
+
+	<property name="build.home" value="${basedir}/build" />	
+	<property name="src.home"        value="${basedir}/src/"/>
+	<property name="dist.home"        value="${basedir}/dist"/>
+	
+	<target name="clean">
+		<delete dir="${build.home}"/>
+		<delete dir="${dist.home}"/>
+	</target>
+	
+	<target name="prepare" depends="clean">
+		<mkdir dir="${dist.home}"/>
+		<mkdir dir="${build.home}"/>
+		<mkdir dir="${dist.home}/lib"/>
+		
+		<javac srcdir="${src.home}" destdir="${build.home}" debug="true" deprecation="true">
+		</javac>
+		<copy  todir="${build.home}">
+        	<fileset dir="${src.home}" excludes="**/*.java"/>
+        </copy>
+	</target>
+	
+	<target name="jar" depends="prepare" >
+		<copy todir="${dist.home}" file="encrypt.bat"/>
+		<copy todir="${dist.home}" file="prop.properties"/>
+		
+		<jar destfile="${dist.home}/App_Prod_EncryptApp.jar" basedir="${build.home}">
+			<manifest>
+				<attribute name="Main-Class" value="App_Prod_Encrypt"></attribute>				
+			</manifest>
+		</jar>
+	</target>
+	
+</project>

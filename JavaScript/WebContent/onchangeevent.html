@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function upperCase(){
+		var a=document.getElementById("t1");
+		a.value=a.value.toUpperCase();
+		a.style.background="yellow";
+}
+	function getMessage(){
+	var b=document.getElementById("t2")
+	b.value="please enter block letters only"
+	b.style.background="grey"
+}
+	function hello(){
+		var c=document.getElementById("t4")
+		c.value="HELLO"
+	}
+	function bye(){
+		var d=document.getElementById("t4")
+		d.value="BYE"
+	}
+</script>
+</head>
+<body>
+	<center>
+	<form>
+		enter current location:<input type="text" placeholder="enter location"
+			id="t1" onchange="upperCase()"><br> 
+   enter name:<input type="text" id="t2" onfocus="getMessage()" size="30"><br>
+		<input type="reset" id="t3" value="Reset"><br> 
+		<input type="text" id="t4" onmouseover="hello()" onmouseout="bye()">
+	</form>
+ 	</center>
+</body>
+</html>

@@ -1,0 +1,52 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+class dummy {
+	public static void main(String args[]) {
+		final Set<String> javaDependentAssetTypes = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER) {
+			{
+				add("_ss_bs");
+				add("_ss_bs_lsn");
+				add("_ss_bs_t");
+				add("_ss_cca");
+				add("_ss_cca_t");
+				add("_ss_cct");
+				add("_ss_cct_lsn");
+				add("_ss_cct_t");
+				add("_ss_classic");
+				add("_ss_classic_t");
+				add("_ss_course");
+				add("_ss_course_eval");
+				add("_ss_e3");
+				add("_ss_e3_t");
+				add("_ss_ecp");
+				add("_ss_ele");
+				add("_ss_expertsessions");
+				add("_ss_fe");
+				add("_ss_generic");
+				add("_ss_legacy");
+				add("_ss_legacy_lsn");
+				add("_ss_legacy_t");
+				add("_ss_live_class");
+				add("_ss_live_encore");
+				add("_ss_live_encore_t");
+				add("_ss_live_lab");
+				add("_ss_live_mentor");
+				add("_ss_live_postassessment");
+				add("_ss_live_practiceexam");
+				add("_ss_live_preassessment");
+				add("_ss_mspark");
+				add("_ss_mspark_t");
+				add("_ss_nls");
+				add("_ss_nls_t");
+				add("_ss_null");
+				add("_ss_projects");
+				add("_ss_sim");
+				add("_ss_sim_t");
+				add("_ss_tp");
+				add("_ss_tp_t");
+				add("_ss_voucher_test");
+			}
+		};
+	}
+}

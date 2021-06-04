@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>resultOnWebpage</title>
+<script type="text/javascript">
+	function getResult() {
+		var a = parseInt(document.getElementsByName("n1")[0].value);
+		var b = parseInt(document.getElementsByName("n1")[1].value);
+		var c = a + b
+		if (c <= 30) {
+			document.getElementById("i4").value = c;
+			document.getElementById("i4").style.backgroundColor = "red"
+			document.getElementById("i4").style.color = "white"
+		} else if (c > 30 && c <= 60) {
+			document.getElementById("i4").value = c;
+			document.getElementById("i4").style.backgroundColor = "green"
+			document.getElementById("i4").style.color = "white"
+		} else if (c > 60 && c <= 120) {
+			document.getElementById("i4").value = c;
+			document.getElementById("i4").style.backgroundColor = "blue"
+			document.getElementById("i4").style.color = "white"
+		}
+
+	}
+</script>
+</head>
+<body>
+	<center>
+		<form>
+			Enter Num1:<input type="number" name="n1" id="i1" /><br> Enter
+			Num2:<input type="number" name="n1" id="i2" /><br> <input
+				type="button" name="n3" id="i3" value="ADD" onclick="getResult()"><br>
+			Result:<input type="number" id="i4">
+		</form>
+	</center>
+
+</body>
+</html>

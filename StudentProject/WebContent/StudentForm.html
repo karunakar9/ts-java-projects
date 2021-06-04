@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div>
+	<br>
+		<form action="AllDetails" method="post" align="center">
+			<input type="submit" name="bt" value="AllDetails"
+				class="btn btn-primary">
+
+		</form>
+	</div>
+<br><br>
+	<form action="StudentServlet" method="post" align="center">
+		<!-- Enter Student Id:
+		<div class="form-group" align="center">
+			<input type="number" name="sid" value=""
+				class="form-control col-sm-3"><br> <br>
+		</div>
+ -->		Enter Student Name:
+		<div class="form-group" align="center">
+			<input type="text" name="sname" value=""
+				class="form-control col-sm-3"><br> <br>
+		</div>
+
+		Enter Student Batch:
+		<div class="form-group" align="center">
+			<input type="text" name="sbatch" class="form-control col-sm-3"><br>
+			
+
+		</div>
+		&nbsp &nbsp
+		 <input type="submit" name="bt" value="Add"
+			class="btn btn-primary"> &nbsp &nbsp 
+			<!-- <input type="submit"
+			name="bt" value="Show" class="btn btn-primary"> --> &nbsp &nbsp
+
+		<!-- <input type="submit" name="bt" value="Delete" class="btn btn-primary">
+ -->
+
+	</form>
+
+
+</body>
+</html>

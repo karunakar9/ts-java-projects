@@ -1,0 +1,11 @@
+
+public class Mettl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s=""Test"";
+		s=s+8;
+
+	}
+
+}

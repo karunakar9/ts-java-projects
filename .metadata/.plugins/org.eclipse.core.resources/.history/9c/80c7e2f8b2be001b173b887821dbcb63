@@ -1,0 +1,11 @@
+import java.util.HashMap;
+
+public class Mettl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap map =new Hashmap();
+		map.put("1", "two");
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class amz {
+
+	public static void main(String[] args) {
+		int maxTravelDist = 10000;
+		Map<Integer, Integer> forwardRoutList = new HashMap<Integer, Integer>();
+		forwardRoutList.put(1, 3000);
+		forwardRoutList.put(2, 5000);
+		forwardRoutList.put(3, 7000);
+		forwardRoutList.put(4, 10000);
+		Map<Integer, Integer> returnRoutList = new HashMap<Integer, Integer>();
+		returnRoutList.put(1, 2000);
+		returnRoutList.put(2, 3000);
+		returnRoutList.put(3, 4000);
+		returnRoutList.put(4, 5000);
+
+		// results
+		Map<Integer, Integer> resultList = new HashMap<Integer, Integer>();
+		Set<Integer> keys = forwardRoutList.keySet();
+		for (Integer K : keys) {
+			for (Integer K : keys) {
+
+//				System.out.println(K + "  " + forwardRoutList.get(K));
+			}
+//			System.out.println(K + "  " + forwardRoutList.get(K));
+		}
+
+	}
+
+}
